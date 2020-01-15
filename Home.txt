@@ -1,0 +1,30 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-01-14T12:03:35-06:00
+
+====== Home ======
+Created Tuesday 14 January 2020
+
+
+Syllabus day:
+
+two parts to an HCI system:
+* Human
+	* Brain (analog to CPU)
+	* Eyeballs
+	* Hands
+	* Mouth
+	* Ears
+	* Nose
+* Computer
+	* CPU
+	* GPU
+	* I/O devices
+	* Monitor
+	* Keyboard
+	* Mouse / trackpad / pointing device
+	* Speakers
+	* Memory
+	* Networking / WiFi
+	* Power supply
+	* Etc
