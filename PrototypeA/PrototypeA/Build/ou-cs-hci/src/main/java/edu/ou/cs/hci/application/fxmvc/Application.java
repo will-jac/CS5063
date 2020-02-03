@@ -67,6 +67,12 @@ public final class Application extends javafx.application.Application
 
 	public void	start(Stage stage)
 	{
+		
+		View view = new View(controller, "Movie Metadata Editor", 40, 40);
+		
+		
+		// worthless. all this stuff does is the splash animation
+		/*
 		Text		text = new Text("FXMVC");
 		StackPane	root = new StackPane();
 
@@ -96,6 +102,7 @@ public final class Application extends javafx.application.Application
 
 		timeline.getKeyFrames().add(endframe);
 		timeline.play();
+		*/
 	}
 
 	public void	stop()

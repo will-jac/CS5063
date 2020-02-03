@@ -53,6 +53,9 @@ public final class View
 	// Construct a scene and display it in a window (stage).
 	public View(Controller controller, String name, double x, double y)
 	{
+		
+		Stage		stage = new Stage();
+		
 		this.controller = controller;
 
 		// Handle WINDOW_CLOSE_REQUESTs
@@ -61,8 +64,10 @@ public final class View
 		// Create a set of panes to include
 		panes = new ArrayList<AbstractPane>();
 
-		panes.add(new EditorPane(controller));
-
+		EditorPane ep = new EditorPane(controller);
+		ep.setFileChooserWindow(stage);
+		panes.add(ep);
+		
 		// Create a tab pane with tabs for the set of included panes
 		TabPane	tabPane = new TabPane();
 
@@ -77,7 +82,7 @@ public final class View
 		scene.getStylesheets().add(surl);
 
 		// Create a window/stage with a name and an initial position on screen
-		Stage		stage = new Stage();
+		
 
 		stage.setOnHiding(windowHandler);
 		stage.setScene(scene);

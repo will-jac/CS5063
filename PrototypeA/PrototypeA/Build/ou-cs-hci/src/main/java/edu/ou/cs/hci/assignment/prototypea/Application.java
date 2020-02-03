@@ -30,6 +30,7 @@ import javafx.util.Duration;
  * The <CODE>Application</CODE> class.
  *
  * @author  Chris Weaver
+ * @author 	Jack Williams
  * @version %I%, %G%
  */
 public final class Application extends javafx.application.Application
@@ -119,14 +120,12 @@ public final class Application extends javafx.application.Application
 
 		public void	handle(ActionEvent e)
 		{
-			View		view1 = new View(controller, "View 1",  40,  40);
-			View		view2 = new View(controller, "View 2", 120, 120);
-			View		view3 = new View(controller, "View 3", 200, 200);
-
-			controller.addView(view1);
-			controller.addView(view2);
-			controller.addView(view3);
-
+			View view = new View(controller, "Movie Metadata Editor",  40,  40);
+			
+			
+			
+			controller.addView(view);
+			
 			stage.hide();
 		}
 	}

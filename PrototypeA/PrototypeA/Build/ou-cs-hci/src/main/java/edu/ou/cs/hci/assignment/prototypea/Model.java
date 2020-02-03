@@ -14,6 +14,8 @@
 
 package edu.ou.cs.hci.assignment.prototypea;
 
+import java.util.Calendar;
+import java.util.Date;
 //import java.lang.*;
 import java.util.HashMap;
 import javafx.application.Platform;
@@ -49,16 +51,46 @@ public final class Model
 		properties = new HashMap<String, Object>();
 
 		// Parameters accessed and/or modified by EditorPane controls
-		properties.put("myDouble",		5.0);
-		properties.put("myInt",		5);
-		properties.put("myString",		"123abc");
+		
+		// Metadata options:
+		properties.put("Title", "Title");
+		properties.put("Year", Calendar.getInstance().get(Calendar.YEAR));
+		properties.put("Director", "Director");
+		properties.put("Runtime", 0);
+		properties.put("Average Review", 5.0);
+		properties.put("Number of Reviews", 0);
+		properties.put("Color", true);
+		properties.put("Animated", false);
+		properties.put("Rating", "G");
+//		HashMap<String, Boolean> awards = new HashMap<String, Boolean>();
+		properties.put("Picture", false);
+		properties.put("Directing", false);
+		properties.put("Cinematography", false);
+		properties.put("Acting", false);
+//		properties.put("Awards", awards);
+//		HashMap<String, Boolean> genre = new HashMap<String, Boolean>();
+		properties.put("Action", false);
+		properties.put("Comedy", false);
+		properties.put("Documentary", false);
+		properties.put("Drama", false);
+		properties.put("Fantasy", false);
+		properties.put("Horror", false);
+		properties.put("Romance", false);
+		properties.put("Sci-Fi", false);
+		properties.put("Thriller", false);
+		properties.put("Western", false);
+//		properties.put("Genre", genre);
+		properties.put("Poster", null);
+		properties.put("Poster File Path", null);
+		properties.put("Comments", "");
+
 	}
 
 	//**********************************************************************
 	// Public Methods (Controller)
 	//**********************************************************************
 
-	public Object	getValue(String key)
+	public Object getValue(String key)
 	{
 		return properties.get(key);
 	}
