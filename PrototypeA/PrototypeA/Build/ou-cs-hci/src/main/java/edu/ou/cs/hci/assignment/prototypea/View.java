@@ -75,8 +75,8 @@ public final class View
 			tabPane.getTabs().add(pane.createTab());
 
 		// Create a scene with an initial size, and attach a style sheet to it
-		Scene		scene = new Scene(tabPane, 800, 600);
-		URL		url = View.class.getResource("View.css");
+		Scene		scene = new Scene(tabPane, 600, 700);
+		URL			url = View.class.getResource("View.css");
 		String		surl = url.toExternalForm();
 
 		scene.getStylesheets().add(surl);

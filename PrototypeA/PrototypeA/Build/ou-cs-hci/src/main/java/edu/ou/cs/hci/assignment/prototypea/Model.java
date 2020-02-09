@@ -56,12 +56,15 @@ public final class Model
 		properties.put("Title", "Title");
 		properties.put("Year", Calendar.getInstance().get(Calendar.YEAR));
 		properties.put("Director", "Director");
-		properties.put("Runtime", 0);
+		properties.put("Runtime", 0.0);
 		properties.put("Average Review", 5.0);
 		properties.put("Number of Reviews", 0);
 		properties.put("Color", true);
 		properties.put("Animated", false);
-		properties.put("Rating", "G");
+		properties.put("Rating G", true);
+		properties.put("Rating PG", false);
+		properties.put("Rating PG-13", false);
+		properties.put("Rating R", false);
 //		HashMap<String, Boolean> awards = new HashMap<String, Boolean>();
 		properties.put("Picture", false);
 		properties.put("Directing", false);
@@ -83,6 +86,7 @@ public final class Model
 		properties.put("Poster", null);
 		properties.put("Poster File Path", null);
 		properties.put("Comments", "");
+		properties.put("Summary", "");
 
 	}
 
